@@ -1,0 +1,7 @@
+(executable
+ (public_name sudoku)
+ (name main)
+ (modes byte exe)
+ (ocamlopt_flags (:standard -O3))
+ (libraries sudoku core)
+ (preprocess (pps ppx_let ppx_compare ppx_sexp_conv)))
